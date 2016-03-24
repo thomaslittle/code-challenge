@@ -1,0 +1,199 @@
+<!doctype html>
+<!--[if lt IE 9]>     <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>        <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ally Code Challenge - Thomas Little</title>
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+    <header class="Header">
+      <div class="u-sitewidth">
+        <div class="Header-logo">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32"><path fill="#fff" d="M23.672 5.855c0 2.704-2.192 4.896-4.896 4.896S13.88 8.56 13.88 5.856C13.88 3.15 16.072.96 18.776.96s4.896 2.19 4.896 4.895z"/><path fill="#fff" d="M35.13 11.104c-.455.05-.102 2.574-3.18 3.13C30.282 10.9 26.95 8.58 23.065 8.58h-9.64c-.808 0-1.565.1-2.322.303-.303-.454-1.06-1.413-2.524-1.615-2.02-.303-3.483.858-3.382 1.363s2.02.05 3.18 1.414c-2.423 1.464-4.19 3.937-4.744 6.864-1.464.96-3.23 1.01-3.432 2.27-1.01 5.604 3.28 5.3 3.28 5.3s1.818 2.878 6.613 4.09v.706c0 1.514 1.21 2.726 2.726 2.726s2.727-1.21 2.727-2.726v-.252h6.057v.252c0 1.514 1.21 2.726 2.726 2.726s2.726-1.21 2.726-2.726v-.808-.202c3.584-1.565 6.158-5.2 6.158-9.438 0-1.262-.252-2.473-.656-3.584.656-.202 1.464-.606 2.02-1.21 1.008-1.263.908-2.98.554-2.928zm-27.51 6.31c-.908 0-1.614-.758-1.614-1.616 0-.91.757-1.615 1.615-1.615.91 0 1.616.757 1.616 1.615.05.91-.707 1.615-1.615 1.615zm15.85-6.158h-9.085c-.404 0-.757-.353-.757-.757s.353-.758.757-.758h9.085c.404 0 .757.353.757.757s-.353.756-.757.756z"/></svg>
+            <h1>URBANK</h1>
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#" title="home">home</a></li>
+            <li><a href="#" title="employee">employee</a></li>
+            <li><a href="#" title="company" class="is--active">company</a></li>
+            <li><a href="#" title="services">services</a></li>
+            <li><a href="#" title="contact">contact</a></li>
+          </ul>
+          <div class="hamburger-menu">
+            <div class="bar"></div> 
+          </div>
+          <div class="mobile-login"><a href="#Modal"><i class="fa fa-lock"></i> Login</a></div>        
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="u-sitewidth">
+        <div class="Main content">
+          <h1>Best Bank Ever!</h1>
+          <p>Pellentesque habitant morbi tristique senectus et netus et <a href="#">malesuada</a> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris <a href="#">placerat</a> eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
+          <h3>Reasons We’re Awesome:</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Vestibulum auctor dapibus neque.</li>
+          </ul>
+          <div class="Main-callout">
+            <h3>Amazing Mobile Info</h3>
+            <img src="images/svg/mobile-phone.svg" alt="Mobile Content">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+          </div>
+          <div class="Main-rates">
+            <h2>Rates <strong>Check them out.</strong></h2>
+            <table class="Main-rates-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Annual Percentage Yield</th>
+                  <th>Est. Earning for 1 Year*</th>
+                </tr>
+              </thead>
+              <tbody data-bind="foreach: banks">
+                <tr>
+                  <td data-th="Bank" data-bind="text: name"></td>
+                  <td data-th="Annual % Yield" data-bind="text: apy"></td>
+                  <td data-th="Est. Earning for 1 Year*" data-bind="text: earnings"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+        <div class="Login">
+          <div class="Login-header">
+            <a href="#Modal">Login</a>
+          </div>
+          <div id="Modal" class="Login-modal">
+            <div>
+              <a href="#modal-close" title="Close" class="modal-close">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generated by IcoMoon.io -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                <path fill="#fff" d="M0.033 7.551l7.467-7.467 24.55 24.55-7.467 7.467-24.55-24.55z"></path>
+                <path fill="#fff" d="M7.551 32.037l-7.467-7.467 24.55-24.55 7.467 7.467-24.55 24.55z"></path>
+                </svg>
+              </a>
+              <h1>Sign In To Your Account</h1>
+              <div class="login">
+                <form class="login-container">
+                  <p><input type="text" placeholder="Username "></p>
+                  <p><input type="password" placeholder="Password"></p>
+                  <p><input type="submit" value="Login"></p>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+          <ul class="tabs">
+            <li>
+              <input type="radio" name="tabs" id="tab1" checked />
+              <label for="tab1">News</label>
+              <div id="tab-content1" class="tab-content">
+              <h4><a href="#">Lorem ipsum dolor</a></h4>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p>
+              <h4><a href="#">Lorem ipsum dolor</a></h4>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p>
+              <h4><a href="#">Lorem ipsum dolor</a></h4>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p>
+              </div>
+            </li>
+            
+            <li>
+              <input type="radio" name="tabs" id="tab2" />
+              <label for="tab2">Archive</label>
+              <div id="tab-content2" class="tab-content">
+                <h4><a href="#">Lorem ipsum dolor</a></h4>
+                <h4><a href="#">Lorem ipsum dolor</a></h4>
+                <h4><a href="#">Lorem ipsum dolor</a></h4>
+                <h4><a href="#">Lorem ipsum dolor</a></h4>
+                <h4><a href="#">Lorem ipsum dolor</a></h4>
+                <h4><a href="#">Lorem ipsum dolor</a></h4>
+                <h4><a href="#">Lorem ipsum dolor</a></h4>
+                <h4><a href="#">Lorem ipsum dolor</a></h4>
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="Footer content">
+      <div class="u-sitewidth">
+        <div class="Footer-legal">&copy; 2014 URBank</div>
+        <nav>
+          <ul class="Footer-nav">
+            <li><a href="#">home</a></li>
+            <li><a href="#">employee</a></li>
+            <li><a href="#" class="is--active">company</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/knockout/dist/knockout.js"></script>
+    <script src="/bower_components/tablesorter/jquery.tablesorter.min.js"></script>
+    <script src="/bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

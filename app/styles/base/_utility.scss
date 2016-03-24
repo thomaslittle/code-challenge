@@ -1,0 +1,14 @@
+/**
+* Utility
+* base/_utility.scss
+*/
+.u-sitewidth {
+  @include center($site-width);
+  @include cf();
+}
+.content {
+	padding: 25px 20px;
+	@include mq($from: tablet) {
+		padding: 65px 20px;
+	}
+}

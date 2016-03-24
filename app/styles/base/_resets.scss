@@ -1,0 +1,49 @@
+/**
+ * Resets
+ * base/_resets.scss
+ */
+
+/**
+ * @TapHighlight
+ */
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/**
+ * @FontAppearance
+ */
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * @Selection
+ */
+::selection {
+  background: transparentize($color-primary, 0.8);
+}
+
+::-moz-selection {
+  background: transparentize($color-primary, 0.8);
+}
+
+
+/**
+ * @BoxSizing
+ */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/**
+* @FormElements
+*/
+input, textarea, button {
+  border-radius: 0;
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,57 @@
+//
+// @login form
+//
+
+.login {
+  width: 100%;
+  font-size: 16px;
+}
+
+.login-header {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.login {
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.6rem 0;
+  }
+  input {
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 12px;
+
+    &[type="text"], &[type="password"] {
+      background: #fff;
+      border-color: $color-primary;
+      color: #555;
+      transition: all 0.3s $authenticMotion;
+    }
+    &[type="text"]:focus, &[type="password"]:focus {
+      border-color: darken($color-primary, 20%);
+    }
+    &[type="submit"] {
+      background-color: $color-secondary;
+      border-color: transparent;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s $authenticMotion;
+
+      &:hover {
+        background-color: darken($color-secondary, 5%);
+      }
+      &:focus {
+        border-color: $color-secondary;
+      }
+    }
+  }
+}

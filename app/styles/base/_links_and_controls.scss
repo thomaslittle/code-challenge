@@ -1,0 +1,15 @@
+/**
+* @Links
+*/
+a {
+  color: $color-primary;
+  transition: color 0.2s $authenticMotion;
+
+  &:hover {
+    color: lighten($color-primary, 8%);
+  }
+
+  &:active {
+    color: $color-primary;
+  }
+}

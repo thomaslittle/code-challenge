@@ -1,0 +1,49 @@
+//
+// @Footer
+//
+.Footer {
+  height: 100px;
+  background-color: #e7e8e9;
+  padding-top: 20px;
+  @include cf();
+  &-legal {
+    color: $color-primary;
+    @include mq($from: tablet) {
+      float: left;
+    }
+  }
+  &-nav {
+    @include mq($from: tablet) {
+      float: right;
+      margin: 0;
+    }
+    margin-top: 1.4rem;
+    padding: 0;
+    font-size: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      a {
+        padding: 0 5px;
+        &:first-child {
+          padding-left: 0;
+        }
+        font-size: 14px;
+        @include mq($from: tablet) {
+          padding: 0 20px;
+          font-size: 16px;
+        }
+        text-decoration: none;
+        &.is--active {
+          font-weight: bold;
+        }
+      }
+      &:last-child {
+        a {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
