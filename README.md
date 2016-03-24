@@ -22,7 +22,7 @@ gulp serve
 
 Build it!
 ```
-gulp serve
+gulp
 ```
 
 Deploy to surge (http://thomaslittle-ally.surge.sh/)
