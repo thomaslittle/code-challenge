@@ -3,23 +3,25 @@
 ![ally](http://thomaslittle-ally.surge.sh/images/logo.jpg "Ally Code Challenge")
 Ally Code Challenge
 
+[View project](http://thomaslittle-ally.surge.sh/)
+
 Installation
 -----------
-Clone this repo
+1. Clone this repo
 
-Add node modules
+2. Add node modules
 ```
 npm install
 ```
 
-Add Bower components
+3. Add Bower components
 ```
 bower install
 ```
 
-Run it!
+4. Run it! (development mode - this includes browsersync, sass/bower injections, sourcemaps)
 ```
-gulp serve (development mode - browsersync, bower injections, watch)
+gulp serve
 ```
 
 Build it! (outputs minified assets to dist for production)
@@ -27,9 +29,9 @@ Build it! (outputs minified assets to dist for production)
 gulp
 ```
 
-Deploy to surge (http://thomaslittle-ally.surge.sh/)
+Deploy it! (deploys to surge at http://thomaslittle-ally.surge.sh/)
 ```
 gulp deploy
 ```
 
-[View project](http://thomaslittle-ally.surge.sh/)
+
