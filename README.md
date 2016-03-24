@@ -7,24 +7,24 @@ Ally Code Challenge
 
 Installation
 -----------
-1. Clone this repo
+1) Clone this repo
 
-2. Add node modules
+2) **Add node modules**
 ```
 npm install
 ```
 
-3. Add Bower components
+3) **Add Bower components**
 ```
 bower install
 ```
 
-4. Run it! (development mode - this includes browsersync, sass/bower injections, sourcemaps)
+4) **Run it!** (development mode - this includes browsersync, sass/bower injections, sourcemaps)
 ```
 gulp serve
 ```
 
-Build it! (outputs minified assets to dist for production)
+**Build it!** (outputs minified assets to dist for production)
 ```
 gulp
 ```
