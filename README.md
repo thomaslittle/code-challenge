@@ -17,10 +17,10 @@ bower install
 
 Run it!
 ```
-gulp serve
+gulp serve (development mode - browsersync, bower injections, watch)
 ```
 
-Build it!
+Build it! (outputs minified assets to dist for production)
 ```
 gulp
 ```
