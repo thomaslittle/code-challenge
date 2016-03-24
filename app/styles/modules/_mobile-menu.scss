@@ -73,4 +73,8 @@ $bar-spacing: 10px;
     color: $color-white;
     text-decoration: none;
   }
+  @include mq($from: tablet) {
+    display: none;
+  }
+
 }
