@@ -14,7 +14,7 @@ var app = {
         app.router.addRoutes([
             {   // home page
                 path: '/',
-                cnl: [app.home.init],
+                ally: [app.home.init],
                 destroy: [app.home.destroy]
             }
         ]);

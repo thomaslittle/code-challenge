@@ -33,8 +33,8 @@
       };
     },
     callRouteCallbacks: function() {
-      if(this.route && this.route.hasOwnProperty('cnl')) {
-        this.route.cnl.forEach(function(n, i, a) {
+      if(this.route && this.route.hasOwnProperty('ally')) {
+        this.route.ally.forEach(function(n, i, a) {
           if(typeof n === 'function') n.call();
         });
       }
