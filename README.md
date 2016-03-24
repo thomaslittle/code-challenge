@@ -1,4 +1,6 @@
 # code-challenge
+Inline-style: 
+![ally](http://thomaslittle-ally.surge.sh/images/logo.jpg "Ally Code Challenge")
 Ally Code Challenge
 
 Installation
@@ -30,4 +32,4 @@ Deploy to surge (http://thomaslittle-ally.surge.sh/)
 gulp deploy
 ```
 
-[View demo](http://thomaslittle-ally.surge.sh/)
+[View project](http://thomaslittle-ally.surge.sh/)
