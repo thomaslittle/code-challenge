@@ -5,7 +5,7 @@ Ally Code Challenge
 
 [View project](http://thomaslittle-ally.surge.sh/)
 
-Installation
+Dev Installation
 -----------
 1) Clone this repo
 
