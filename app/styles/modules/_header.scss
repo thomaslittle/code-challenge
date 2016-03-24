@@ -10,6 +10,7 @@
   &-logo {
     text-align: left;
     margin-left: 3.4rem;
+    transition: margin-left 0.3s $authenticMotion;
     @include mq($from: tablet) {
       float: left;
       padding-left: 20px;
@@ -63,12 +64,14 @@
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s $authenticMotion;
     &.is--active {
       opacity: 1;
       visibility: visible;
       transform: translateY(0%);
       height: 100%;
+    }
+    &.is--activated {
+      transition: all 0.3s $authenticMotion;
     }
     @include mq($from: tablet) {
       opacity: 1;

@@ -20,10 +20,11 @@ var _m_ = {
     // placeholder fix
     $('input').placeholder();
 
-    $('.hamburger-menu').on('click', function() {
+    $('.Header-hb').on('click', function() {
       $('.bar').toggleClass('animate');
-      $('.Header ul').toggleClass('is--active');
+      $('.Header ul').addClass('is--activated').toggleClass('is--active');
     })
+
   }
 };
 module.exports = _m_;

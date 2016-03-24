@@ -1,0 +1,76 @@
+.Main {
+  &-rates {
+    &-table {
+      margin: 1em 0;
+      min-width: 100%;
+      tbody {
+        tr {
+          opacity: 1;
+          transition: background-color 0.1s $authenticMotion;
+          &:first-child {
+                font-size: 18px;
+                font-weight: bold;
+          }
+          &:nth-of-type(even) {
+            background-color: $block-even;
+              &:hover {
+              background-color: $color-aqua;
+              }
+          }
+          &:nth-of-type(odd) {
+            background-color: $block-odd; 
+              &:hover {
+              background-color: $color-aqua;
+              }
+          }
+        }
+      }
+      
+      th {
+        display: none;
+        cursor: pointer;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        &:first-child {
+          cursor: default;
+        }
+      }
+      
+      td {
+        display: block; 
+          
+        &:first-child {
+          padding-top: 1rem;
+        }
+        &:last-child {
+          padding-bottom: 1rem;
+        }
+
+        &:before {
+          content: attr(data-th)':';
+          font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          font-weight: 300;
+          font-size: 12px;
+          width: 6.5em;
+          display: inline-block;
+         
+          @include mq($from: tablet) {
+              display: none;
+            }
+        }
+      }
+      
+      th, td {
+        text-align: left;
+        padding-left: 1rem;
+
+        @include mq($from: tablet) {
+          display: table-cell;
+          padding: 1rem 1rem;
+          
+        }
+      } 
+    }
+  }
+}
