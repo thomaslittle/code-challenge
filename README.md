@@ -1,5 +1,5 @@
 # code-challenge
-Inline-style: 
+
 ![ally](http://thomaslittle-ally.surge.sh/images/logo.jpg "Ally Code Challenge")
 Ally Code Challenge
 
